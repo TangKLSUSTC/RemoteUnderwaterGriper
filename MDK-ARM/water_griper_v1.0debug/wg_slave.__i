@@ -1,0 +1,8 @@
+-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c
+-fno-rtti -funsigned-char -fshort-enums -fshort-wchar
+-D__MICROLIB -gdwarf-3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Core/Hardware -I ../Core/RT_Thread/include -I ../Core/RT_Thread/include/libc -I ../Core/RT_Thread/user -I ../Core/RT_Thread/components/finsh -I ../Core/board -I ../Core/BSP -I ../Core/Easyflash/inc
+-I./RTE/_water_griper_v1.0debug
+-ID:/Keil_v5/ARM/PACK/ARM/CMSIS/5.7.0/CMSIS/Core/Include
+-ID:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include
+-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB -DUSE_RTT
+-o water_griper_v1.0debug/wg_slave.o -MD "../Core/Hardware/wg_slave.c"
